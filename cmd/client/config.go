@@ -47,7 +47,7 @@ func LoadDiscordgoConfig() (*DiscordgoConfig, error) {
 
 	gID, err := strconv.Atoi(os.Getenv("DISCORD_GUILD_ID"))
 	if err != nil {
-		return nil, fmt.Errorf("cant convert GuildID to int")
+		return nil, fmt.Errorf("GuildID convertion to int failed")
 	}
 
 	return &DiscordgoConfig{
